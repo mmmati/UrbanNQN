@@ -1,0 +1,365 @@
+/* GENERALES */
+
+*{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+main{
+    padding-top: 5.5rem;
+}
+
+/* INDEX | HEADER */
+
+.navbar{
+    height: 5.5rem;
+}
+.navbar-brand, .offcanvas-title{
+    font-size: 3rem;
+    font-family: "Sedgwick Ave Display", sans-serif;
+}
+.nav-item{
+    transition: transform 0.5s ease;
+}
+.nav-item:hover{
+    transform: scale(1.015);
+    filter: brightness(80%);
+}
+
+/* INDEX | HERO */
+
+#hero img{
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* INDEX | ROPA */
+
+.ropa{
+    background-color: rgb(3, 3, 3);
+}
+.ropa h2{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.hombre{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../assets/seccionHombre.jpg);
+}
+.mujer{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../assets/seccionMujer.jpg);
+}
+.containerGenero{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem 0;
+}
+.containerGenero h2{
+    height: 44rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80vw;
+    max-width: 300px;
+    border: 1px solid rgb(196, 196, 196);
+    margin: 0 auto;
+    transition: transform 0.5s ease;
+}
+.card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 6px 2px rgb(199, 199, 199);
+}
+.containerVerMas{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../assets/verMas.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.containerVerMas h2{
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* INDEX | NOSOTROS */
+
+.containerNosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 2rem;
+    padding: 0 1.2rem;
+}
+.containerNosotros h3{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+/* INDEX | FOOTER */
+
+footer{
+    background-color: rgb(17, 19, 22);
+}
+footer h4{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+footer a{
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+.containerFooter{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4rem;
+    padding-left: 1.5rem;
+}
+.navFooter{
+    max-width: 230px;
+}
+/* iconos */
+.sigamosConectados ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1.3rem;
+    justify-content: center;
+}
+.sigamosConectados .icon{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 15px;
+    
+
+    transition: transform 0.5s ease;
+}
+.sigamosConectados .icon:hover{
+    transform: scale(1.05);
+    filter: brightness(80%);
+}
+.copyright{
+    margin: 0;
+    background-color: rgb(3, 3, 3);
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    text-align: right;
+    padding: 14px 10px;
+}
+
+
+
+
+
+
+
+/* CONTACTO | MAIN */
+
+
+/* generales */
+.mainContacto{
+    padding-top: 5.5rem;
+    background-color: rgb(3, 3, 3);
+    color: rgb(255, 255, 255);
+}
+.mainContacto a{
+    color: rgb(255, 255, 255);
+}
+
+.fa-whatsapp{
+    font-size: 2.4rem;
+}
+.mainContacto .icon{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;;
+}
+.mainContacto p{
+    margin: 0;
+}
+
+/* contenedor principal */
+.containerMainContacto{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 6rem;
+    padding: 8rem 0;
+    width: 85vw;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.mainContacto h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* formulario */
+
+.mainContacto form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.input label{
+    text-align: start;
+    font-size: 0.8rem;
+}
+
+.input input, .input textarea{
+    height: 2.5rem;
+    border-radius: 10px;
+    border: solid rgb(146, 146, 146) 1px;
+    background-color: rgb(3, 3, 3);
+    padding: 5px 10px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    transition: transform 0.5s ease;
+}
+.input textarea{
+    height: 6rem;
+    transition: transform 0.5s ease;
+}
+
+/* boton */
+
+.button input{
+    width: 100%;
+    color: rgb(17, 17, 17);
+    background-color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    border: solid rgb(255, 255, 255) 4px;
+    margin-top: 20px;
+    padding: 10px 0;
+    
+    transition: transform 0.5s;
+}
+.button input:hover, .input input:hover, .input textarea:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 6px 2px rgb(199, 199, 199);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px){
+    .containerGenero{
+        display: flex;
+        flex-direction: row;
+        padding: 5rem 2rem;
+        max-width: 700px;
+        margin: 0 auto;
+        
+    }
+    /* NOSOTROS */
+    .containerNosotros{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+@media (min-width: 1024px){
+    /* INDEX | ROPA */
+    .containerGenero{
+        gap: 2rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    /* INDEX | FOOTER */
+    .containerFooter{
+        display: flex;
+        flex-direction: row;
+        padding: 3rem;
+        height: 40vh;
+    }
+
+    /* CONTACTO | MAIN */
+    .containerMainContacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    .formulario{
+        width: 100%;
+        max-width: 600px;
+        
+    }
+}
