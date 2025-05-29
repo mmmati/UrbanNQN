@@ -480,6 +480,17 @@ footer ul{
     .cardText{
         font-size: 4rem;
     }
+    /* INDEX | NOSOTROS */
+    .containerNosotros{
+        gap: 3.rem;
+        max-width: 1000px;
+    }
+    .containerNosotros h3{
+    font-size: 3.2rem;
+    }
+    .containerNosotros p{
+        font-size: 1.2rem;
+    }
     /* INDEX | FOOTER */
     .containerFooter{
         display: flex;
@@ -499,9 +510,7 @@ footer ul{
     .formulario{
         width: 100%;
         max-width: 600px;
-        
     }
-
     /* PRODUCTOS | MAIN */
     .tituloP{
         padding: 12rem 0;
