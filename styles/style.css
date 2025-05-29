@@ -54,19 +54,8 @@ hr{
 
 /* INDEX | ROPA */
 
-.ropa{
-    background-color: rgb(3, 3, 3);
-}
-.ropa h2{
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    font-family: "Special Gothic Expanded One", sans-serif;
-    font-weight: bold;
-    font-size: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
+/* genero */
+
 .hombre{
     background-image: linear-gradient(
         0deg,
@@ -83,32 +72,45 @@ hr{
     )
     ,url(../assets/seccionMujer.jpg);
 }
+
 .containerGenero{
+    background-color: rgb(5, 5, 5);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
     padding: 5rem 0;
 }
-.containerGenero h2{
-    height: 44rem;
+.cardGenero{
+    aspect-ratio: 3/5;
+    width: 85vw;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.card{
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    width: 80vw;
-    max-width: 300px;
-    border: 1px solid rgb(196, 196, 196);
+    max-width: 270px;
     margin: 0 auto;
+    border: solid #9c9c9c 1px;
     transition: transform 0.5s ease;
 }
-.card:hover{
-    transform: scale(1.02);
-    box-shadow: 0 0 6px 2px rgb(199, 199, 199);
+.cardGenero:hover{
+    transform: scale(1.03);
 }
+.cardText{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+/* ver mas */
+
 .containerVerMas{
     background-image: linear-gradient(
         0deg,
@@ -119,9 +121,8 @@ hr{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-.containerVerMas h2{
-    height: 12rem;
+
+    height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -434,12 +435,7 @@ footer ul{
 
 @media (min-width: 600px){
     .containerGenero{
-        display: flex;
-        flex-direction: row;
-        padding: 5rem 2rem;
-        max-width: 700px;
-        margin: 0 auto;
-        
+        flex-direction: row;   
     }
     /* NOSOTROS */
     .containerNosotros{
@@ -456,12 +452,20 @@ footer ul{
 
 
 
+
+
+
+
 @media (min-width: 1024px){
     /* INDEX | ROPA */
+    .containerGenero .cardGenero{
+        max-width: 400px;
+    }
     .containerGenero{
-        gap: 2rem;
-        max-width: 700px;
-        margin: 0 auto;
+        gap: 4rem;
+    }
+    .cardText{
+        font-size: 4rem;
     }
     /* INDEX | FOOTER */
     .containerFooter{
