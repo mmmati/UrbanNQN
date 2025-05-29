@@ -195,7 +195,7 @@ footer ul{
     display: flex;
     flex-direction: row;
     gap: 1.3rem;
-    justify-content: center;
+    justify-content: left;
 }
 .sigamosConectados .icon{
     font-size: 1.5rem;
@@ -497,6 +497,9 @@ footer ul{
         flex-direction: row;
         padding: 3rem;
         height: 40vh;
+    }
+    .sigamosConectados ul{
+        justify-content: center;
     }
 
     /* CONTACTO | MAIN */
