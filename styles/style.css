@@ -149,9 +149,10 @@ hr{
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 90vh;
+    height: auto;
     gap: 2rem;
-    padding: 0 1.2rem;
+    padding: 10rem 1.2rem;
+    overflow: hidden;
 }
 .containerNosotros h3{
     font-size: 2.3rem;
@@ -447,6 +448,7 @@ footer ul{
 
 
 @media (min-width: 600px){
+    /* INDEX | ROPA */
     .containerGenero{
         flex-direction: row;   
     }
@@ -454,6 +456,8 @@ footer ul{
     .containerNosotros{
         max-width: 700px;
         margin: 0 auto;
+        height: 90vh;
+        padding: 0 1.2rem;
     }
 
     /* PRODUCTOS | MAIN */
