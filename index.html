@@ -15,41 +15,36 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gasoek+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sedgwick+Ave+Display&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Gasoek+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sedgwick+Ave+Display&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed w-100" style="z-index: 1050;" aria-label="Offcanvas navbar large">
-            <div class="container-fluid"> <a class="navbar-brand" href="./index.html">Urban NQN</a> <button class="navbar-toggler"
-                    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+        <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed w-100" style="z-index: 1050;"
+            aria-label="Offcanvas navbar large">
+            <div class="container-fluid"> <a class="navbar-brand text-black" href="./index.html">Urban NQN</a> <button
+                    class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
                     aria-controls="offcanvasNavbar2" aria-label="Toggle navigation"> <span
                         class="navbar-toggler-icon"></span> </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
+                <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar2"
                     aria-labelledby="offcanvasNavbar2Label">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Urban NQN</h5> <button type="button"
-                            class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a> </li>
-                            <li class="nav-item"> <a class="nav-link text-white" href="#nosotros">Nosotros</a> </li>
-                            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Productos
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./pages/productos.html">Hombre</a></li>
-                                    <li><a class="dropdown-item" href="./pages/productos.html">Mujer</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="./pages/productos.html">Ver todo</a></li>
-                                </ul>
+                            <li class="nav-item"> <a class="nav-link active text-black" aria-current="page"
+                                    href="./index.html">Inicio</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-black" href="#nosotros">Nosotros</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-black"
+                                    href="./pages/productos.html">Productos</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-black"
+                                    href="./pages/contacto.html">Contacto</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-black" href="./pages/carrito.html">Carrito</a>
                             </li>
-                            <li class="nav-item"> <a class="nav-link text-white" href="./pages/contacto.html">Contacto</a> </li>
-                            <li class="nav-item"> <a class="nav-link text-white" href="./pages/carrito.html">Carrito</a> </li>
                         </ul>
                         <form class="d-flex mt-3 mt-lg-0" role="search"> <input class="form-control me-2" type="search"
                                 placeholder="Buscar" aria-label="Search"> <button class="btn btn-outline-success"
@@ -61,7 +56,37 @@
     </header>
     <main>
         <section id="hero">
-            <a href="./pages/productos.html"><img src="./assets/tendenciaropa.jpg" alt="Tendencia Ropa"></a>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/hero1.jpg" class="d-block w-100" alt="Ropa Tendencia 2025 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/hero2.png" class="d-block w-100" alt="Ropa Tendencia 2025 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/hero3.jpg" class="d-block w-100" alt="Ropa Tendencia 2025 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
         <section class="ropa">
             <div class="containerGenero">
@@ -115,8 +140,10 @@
             <section class="sigamosConectados navFooter">
                 <h4>Sigamos Conectados</h4>
                 <ul>
-                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands icon fa-instagram"></i></a></li>
-                    <li><a href="https://www.x.com/" target="_blank"><i class="fa-brands icon fa-x-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i
+                                class="fa-brands icon fa-instagram"></i></a></li>
+                    <li><a href="https://www.x.com/" target="_blank"><i class="fa-brands icon fa-x-twitter"></i></a>
+                    </li>
                 </ul>
             </section>
         </div>
