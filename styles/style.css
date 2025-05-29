@@ -195,6 +195,7 @@ footer ul{
 .sigamosConectados ul{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 1.3rem;
     justify-content: left;
 }
@@ -204,7 +205,6 @@ footer ul{
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     padding: 15px;
-    
 
     transition: transform 0.5s ease;
 }
