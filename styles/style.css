@@ -170,11 +170,11 @@ footer h4{
     margin-top: 2rem;
 }
 footer a{
-    color: rgb(175, 175, 175);
+    color: rgb(184, 184, 184);
     font-size: 0.9rem;
 }
 footer a:hover{
-    color: #d4d4d4;
+    color: #d1d1d1;
     text-decoration: underline;
 }
 footer ul{
