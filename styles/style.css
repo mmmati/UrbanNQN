@@ -27,9 +27,7 @@ hr{
 
 /* INDEX | HEADER */
 
-.navbar{
-    height: 5.5rem;
-}
+
 .navbar-brand, .offcanvas-title{
     font-size: 3rem;
     font-family: "Sedgwick Ave Display", sans-serif;
