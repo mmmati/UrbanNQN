@@ -165,15 +165,19 @@ footer{
     background-color: rgb(17, 19, 22);
 }
 footer h4{
-    color: rgb(255, 255, 255);
+    color: rgb(236, 236, 236);
     font-weight: bold;
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
     margin-top: 2rem;
 }
 footer a{
-    color: rgb(255, 255, 255);
+    color: rgb(175, 175, 175);
     font-size: 0.9rem;
+}
+footer a:hover{
+    color: #d4d4d4;
+    text-decoration: underline;
 }
 footer ul{
     display: flex;
@@ -181,7 +185,7 @@ footer ul{
     gap: 10px
 }
 .containerFooter{
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -500,7 +504,7 @@ footer ul{
         display: flex;
         flex-direction: row;
         padding: 3rem;
-        height: 40vh;
+        height: auto;
     }
     .sigamosConectados ul{
         justify-content: center;
