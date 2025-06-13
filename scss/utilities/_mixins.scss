@@ -1,0 +1,6 @@
+@mixin backgroundOverlay($url, $overlay: $oscurecerFondo) {
+  background-image: linear-gradient(0deg, $overlay, $overlay), url($url);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

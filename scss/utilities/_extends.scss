@@ -1,0 +1,9 @@
+%flexColumnCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+%transitionHover {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
