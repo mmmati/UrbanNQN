@@ -7,9 +7,6 @@
 
 
 
-
-
-
 /* GENERALES */
 
 *{
@@ -90,7 +87,7 @@ h2{
 }
 
 .containerGenero{
-    background-color: $colorNegro;
+    @include backgroundOverlay("../assets/bg2.png");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -169,12 +166,12 @@ h2{
 /* INDEX | FOOTER */
 
 footer{
-    background-color: rgb(17, 19, 22);
+    background-color: $colorFooter;
 }
 footer h4{
     color: rgb(236, 236, 236);
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
     margin-top: 2rem;
 }
@@ -200,7 +197,7 @@ footer ul{
     padding-left: 1.5rem;
 }
 .navFooter{
-    max-width: 230px;
+    max-width: 264px;
 }
 /* iconos */
 .sigamosConectados ul{
@@ -225,10 +222,10 @@ footer ul{
 }
 .copyright{
     margin: 0;
-    background-color: $colorNegro;
+    background-color: $colorFooter;
     color: $colorBlanco;
     font-size: 0.8rem;
-    text-align: right;
+    text-align: center;
     padding: 14px 10px;
 }
 
@@ -362,6 +359,9 @@ footer ul{
     text-align: center;
     font-size: 1.75em;
     color: $colorBlanco;
+}
+.containerBg{
+    @include backgroundOverlay("../assets/bg2.png");
 }
 
 /* precio */
@@ -609,8 +609,11 @@ footer ul{
     .containerFooter{
         display: flex;
         flex-direction: row;
-        padding: 3rem;
+        padding: 3rem 3rem 12rem;
         height: auto;
+    }
+    footer h4{
+        margin-bottom: 2.6rem;
     }
     .sigamosConectados ul{
         justify-content: center;
