@@ -70,20 +70,10 @@ h2{
 /* genero */
 
 .hombre{
-    background-image: linear-gradient(
-        0deg,
-        $oscurecerFondo,
-        $oscurecerFondo
-    )
-    ,url(../assets/seccionHombre2.png);
+    @include backgroundOverlay("../assets/seccionHombre2.png");
 }
 .mujer{
-    background-image: linear-gradient(
-        0deg,
-        $oscurecerFondo,
-        $oscurecerFondo
-    )
-    ,url(../assets/seccionMujer2.png);
+    @include backgroundOverlay("../assets/seccionMujer2.png");
 }
 
 .containerGenero{
