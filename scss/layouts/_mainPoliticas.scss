@@ -1,0 +1,23 @@
+.mainPoliticas{
+    background-color: $colorNegro;
+}
+.containerPoliticas h2{
+    color: $colorBlanco;
+    text-align: center;
+    padding: 5rem 1rem;
+    
+}
+.containerParrafos{
+    color: $colorBlanco;
+    padding: 0 2rem;
+    padding-bottom: 4rem;
+}
+.containerParrafos ol{
+    list-style: circle;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}

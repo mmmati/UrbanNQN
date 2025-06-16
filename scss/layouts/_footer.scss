@@ -1,0 +1,64 @@
+footer{
+    background-color: $colorFooter;
+}
+footer h4{
+    color: rgb(236, 236, 236);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+footer a{
+    color: rgb(184, 184, 184);
+    font-size: 0.9rem;
+}
+footer a:hover{
+    color: #d1d1d1;
+    text-decoration: underline;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+.containerFooter{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4rem;
+    padding-left: 1.5rem;
+}
+.navFooter{
+    max-width: 264px;
+}
+
+/* iconos */
+.sigamosConectados ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+    justify-content: left;
+}
+.sigamosConectados .icon{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    background-color: $colorBlanco;
+    border-radius: 50%;
+    padding: 15px;
+
+    transition: transform 0.5s ease;
+}
+.sigamosConectados .icon:hover{
+    transform: scale(1.05);
+    filter: brightness(30%);
+}
+.copyright{
+    margin: 0;
+    background-color: $colorFooter;
+    color: $colorBlanco;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 14px 10px;
+}

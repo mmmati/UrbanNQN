@@ -1,0 +1,92 @@
+/* generales */
+.mainContacto{
+    padding-top: 5.5rem;
+    background-color: $colorNegro;
+    color: $colorBlanco;
+}
+.mainContacto a{
+    color: $colorBlanco;
+}
+
+.fa-whatsapp{
+    font-size: 2.4rem;
+}
+.mainContacto .icon{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;;
+}
+.mainContacto p{
+    margin: 0;
+}
+
+/* contenedor principal */
+.containerMainContacto{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 6rem;
+    padding: 8rem 0;
+    width: 85vw;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.mainContacto h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* formulario */
+
+.mainContacto form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.input label{
+    text-align: start;
+    font-size: 0.8rem;
+}
+
+.input input, .input textarea{
+    height: 2.5rem;
+    border-radius: 10px;
+    border: solid rgb(146, 146, 146) 1px;
+    background-color: $colorNegro;
+    padding: 5px 10px;
+    outline: none;
+    color: $colorBlanco;
+    @extend %transitionHover
+}
+.input textarea{
+    height: 6rem;
+    @extend %transitionHover
+    
+}
+
+
+
+.button input{
+    width: 100%;
+    color: rgb(17, 17, 17);
+    background-color: $colorBlanco;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    border: solid $colorBlanco 4px;
+    margin-top: 20px;
+    padding: 10px 0;
+    transition: transform 0.5s, box-shadow 0.5s ease;
+    
+}
+.button input:hover, .input input:hover, .input textarea:hover{
+    transform: scale(1.02);
+    box-shadow: $sombraHoverBlanca;
+    
+}
