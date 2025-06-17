@@ -31,7 +31,7 @@ hr {
   margin: 0;
 }
 
-h2 {
+h1 {
   font-family: "Special Gothic Expanded One", sans-serif;
 }
 
@@ -234,6 +234,10 @@ footer ul {
 }
 
 /* generales */
+.mainContacto h2 {
+  font-family: "Special Gothic Expanded One", sans-serif;
+}
+
 .mainContacto {
   padding-top: 5.5rem;
   background-color: #000;
@@ -330,7 +334,7 @@ footer ul {
   background-color: #000;
 }
 
-.containerPoliticas h2 {
+.containerPoliticas h1 {
   color: #fff;
   text-align: center;
   padding: 5rem 1rem;
