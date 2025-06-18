@@ -22,6 +22,7 @@
 
 .containerGenero{
     @include backgroundOverlay("../assets/bg2.png");
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;

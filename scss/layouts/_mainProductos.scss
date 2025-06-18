@@ -15,6 +15,7 @@
 }
 .containerBg{
     @include backgroundOverlay("../assets/bg2.png");
+    background-attachment: fixed;
 }
 
 /* precio */
