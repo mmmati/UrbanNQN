@@ -3,10 +3,3 @@
     font-family: $fuenteLogo;
     color: $colorNegro;
 }
-.nav-item{
-    transition: transform 0.5s ease;
-}
-.nav-item:hover{
-    transform: scale(1.015);
-    filter: brightness(80%);
-}
